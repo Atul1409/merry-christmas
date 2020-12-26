@@ -1,0 +1,235 @@
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background: #ede266;
+}
+#container{
+    height:500px;
+    width:90%;
+    background:#0fd590;
+}   
+
+#layer--1{
+    height:90px;
+    width:80%;   background:-webkit-repeating-linear-gradient(45deg,rgba(250, 0, 0, 0.98),rgba(250, 0, 0, 0.98) 10px,#fcfcfc 10px,#fcfcfc 20px); 
+background: repeating-linear-gradient(45deg,rgba(250, 0, 0, 0.98),rgba(250, 0, 0, 0.98) 10px,#fcfcfc 10px,#fcfcfc 20px);
+    position:relative;
+    top:82%;
+    left:10%;
+    border-radius:25px 25px 0 0;
+}
+
+#layer--2{
+    height:70px;
+    width:60%;
+    left:20%;
+    background:-webkit-repeating-linear-gradient(40deg,rgba(0, 255, 249, 0.65),rgba(0, 255, 249, 0.65) 15px,#fffafa 15px,#fffafa 18px); 
+background: repeating-linear-gradient(40deg,rgba(0, 255, 249, 0.65),rgba(0, 255, 249, 0.65) 15px,#fffafa 15px,#fffafa 18px);
+    position:relative;
+    animation:fall 1s linear forwards;
+    border-radius:25px 25px 0 0;
+    
+}
+#layer--3{
+    height:80px;
+    width:40%;
+    left:30%;
+    background:-webkit-repeating-linear-gradient(45deg,#aaff3c,#aaff3c 6px,#ffffff 6px,#ffffff 11px); 
+background: repeating-linear-gradient(45deg,#aaff3c,#aaff3c 6px,#ffffff 6px,#ffffff 11px);
+/*background-size:100px 100px;*/
+    position:relative;
+    animation:fall__two 1s linear forwards;
+    animation-delay:1s;
+    top:-500px;
+    border-radius:25px 25px 0 0;
+}
+
+#candle--layer{
+    background:url('https://i.ibb.co/rMS6Jtn/GM16446-67291-1533256746-removebg-preview.png');
+    height:80px;
+    width:40%;
+    
+    position:relative;
+    width:40%;
+    left:27%;
+    top:-500px;
+    animation:fal_three 1s linear 1 forwards;
+    animation-delay:1.5s;
+}
+
+#message_1{
+    height:50px;
+    width:100%;
+    
+    position:relative;
+    top:-60%;
+    background: #cfde4e;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:iceberg;
+}
+
+#message_2{
+    height:50px;
+    width:100%;
+    
+    position:relative;
+    top:-55%;
+    background: #cfde4e;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:iceberg;
+}
+
+.p{
+    font-family:Modak;
+    height:25px;
+    width:25px;
+    background:#c4083d;
+    padding:3px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.particles{
+    animation:up 1s linear 2.5s 1 forwards;
+
+}
+
+.particles1{
+    animation:up__two 1s linear 3.5s 1 forwards;
+
+}
+
+#p1{
+    position:absolute;
+    left:15%;
+    top:800%;
+}
+#p2{ 
+    position:absolute;
+    left:30%;
+    top:800%;
+}
+#p3{
+    left:45%;
+    position:absolute;
+    top:800%;
+    
+}
+#p4{
+    position:absolute;
+    left:60%;
+    top:800%;
+}
+#p5{ 
+    position:absolute;
+    left:75%;
+    top:800%;
+}
+#p6{
+    left:4%;
+    position:absolute;
+    top:800%;
+    
+}
+#p7{
+    position:absolute;
+    left:15%;
+    top:800%;
+}
+#p8{ 
+    position:absolute;
+    left:26%;
+    top:800%;
+}
+#p9{
+    left:37%;
+    position:absolute;
+    top:800%;
+    
+}
+#p10{
+    left:48%;
+    position:absolute;
+    top:800%;
+    
+}
+#p11{
+    position:absolute;
+    left:59%;
+    top:800%;
+}
+#p12{ 
+    position:absolute;
+    left:70%;
+    top:800%;
+}
+#p13{
+    left:81%;
+    position:absolute;
+    top:800%;
+    
+}
+#p14{
+    left:92%;
+    position:absolute;
+    top:800%;
+    
+}
+
+@keyframes up{
+  from{
+      top:100%;
+  }
+  to{
+      top:2.5%;
+  }
+}
+
+@keyframes up__two{
+  from{
+      top:100%;
+  }
+  to{
+      top:10%;
+  }
+}
+
+@keyframes fall{
+    from{
+        top:-33%;
+        
+    }
+    to{
+        top:50%;
+    }
+    
+}
+
+@keyframes fall__two{
+    from{
+        top:-33%;
+        
+    }
+    to{
+        top:20%;
+    }
+}
+
+@keyframes fal_three{
+    from{
+        top:50%;
+        
+    }
+    to{
+        top:-12%;
+    }
+}
